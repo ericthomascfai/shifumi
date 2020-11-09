@@ -6,7 +6,8 @@
 int main() {
     enum symboles {pierre=1,ciseaux=2,feuille=3};
     int choixj1,choixj2,cpt1,cpt2;
-    while(true) {
+    int recommencer=1;
+    while(recommencer==1) {
         /***********************choix symbole joueur1***********************/
         printf("Veuillez choisir un des symbole j1\n");
         printf("1-pierre\n");
@@ -57,7 +58,8 @@ int main() {
                 printf("Egalité");
             }
         }
-
+    printf("1 pour recommencer 0 pour sortir");
+    scanf("%d",&recommencer);
     }
 
 
