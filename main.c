@@ -5,7 +5,7 @@
 #pragma ide diagnostic ignored "EndlessLoop"
 int main() {
     enum symboles {pierre=1,ciseaux=2,feuille=3};
-    int choixj1,choixj2,cpt1,cpt2;
+    int choixj1,choixj2,cpt1=0,cpt2=0;
     int recommencer=1;
     while(recommencer==1) {
         /***********************choix symbole joueur1***********************/
@@ -58,6 +58,8 @@ int main() {
                 printf("Egalité");
             }
         }
+    printf("J1 a gagné %d fois\n",cpt1);
+    printf("J2 a gagné %d fois\n",cpt2);
     printf("1 pour recommencer 0 pour sortir");
     scanf("%d",&recommencer);
     }
